@@ -1,0 +1,142 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #090b1a;
+}
+
+.main {
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.header1 {
+  font-size: 25px;
+  text-align: center;
+}
+
+.main-card {
+  background-color: #1b1938;
+  border-radius: 10px;
+  width: 335px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image {
+  width: 335px;
+  height: 250px;
+  background-position: right;
+  background-size: 100%;
+  background-image: url(images/image-header-mobile.jpg);
+  border-radius: 10px 10px 0 0;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #aa5cdbb3;
+  border-radius: 10px 10px 0 0;
+}
+
+.text-container {
+  padding: 20px 40px;
+  box-sizing: border-box;
+}
+
+.insights {
+  color: #aa5cdb;
+}
+
+.description {
+  font-size: 15px;
+  color: #ffffffbf;
+  text-align: center;
+}
+
+.data-container {
+  text-align: center;
+}
+
+.name {
+  text-transform: uppercase;
+  color: #ffffff99;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.number {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.data {
+  margin: 30px;
+}
+
+.attribution {
+  color: #ffffffbf;
+}
+
+@media screen and (min-width: 800px) {
+  .main-card {
+    display: flex;
+    min-width: 80%;
+  }
+
+  .image {
+    width: 50%;
+    content: " ";
+    height: 100%;
+    order: 2;
+    background-image: url(images/image-header-desktop.jpg);
+    border-radius: 0px 10px 10px 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .text-container {
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:30px 50px;
+  }
+  .image-overlay {
+    border-radius: 0 10px 10px 0;
+  }
+  .data-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  .data {
+    margin: 5px;
+  }
+  .description {
+    font-size: 15px;
+    text-align: left;
+  }
+  .header1 {
+    text-align: left;
+    font-weight: 700;
+    font-size: 35px;
+  }
+  .number,
+  .name {
+    text-align: left;
+    padding: 0;
+  }
+}
