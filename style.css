@@ -98,13 +98,11 @@ body {
 
   .image {
     width: 50%;
-    content: " ";
-    height: 100%;
     order: 2;
     background-image: url(images/image-header-desktop.jpg);
-    border-radius: 0px 10px 10px 0;
-    background-repeat: no-repeat;
-    background-size: contain;
+    border-radius: 0 10px 10px 0px;
+    background-size: cover;
+    height: inherit;
   }
   .text-container {
     width: 50%;
@@ -112,7 +110,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:30px 50px;
+    padding: 30px 50px;
   }
   .image-overlay {
     border-radius: 0 10px 10px 0;
